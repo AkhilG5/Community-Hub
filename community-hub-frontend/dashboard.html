@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+  <h2 id="welcomeMsg">Welcome!</h2>
+  <p id="userEmail"></p>
+  <h2 class="text-xl font-bold my-4">Curated Feed</h2>
+<div id="feedContainer" class="grid gap-4"></div>
+
+  <div id="points-container">
+    <h3>Your Points: <span id="points">Loading...</span></h3>
+  </div>
+  
+  <button onclick="unlockPremium()">Unlock Premium Content (50 points)</button>
+
+  <div id="transactions">
+    <h4>Transaction History:</h4>
+    <ul id="transaction-list"></ul>
+  </div>
+  
+  <button id="logoutBtn">Logout</button>
+  <h2>Points: <span id="points">0</span></h2>
+
+  <h2>Welcome, <span id="userName"></span>!</h2>
+  <p>Your current points: <strong id="userPoints">Loading...</strong></p>
+  
+
+<h3>Earn Points</h3>
+<input type="number" id="earnAmount" placeholder="Amount" />
+<input type="text" id="earnPurpose" placeholder="Purpose" />
+<button onclick="earnPoints()">Earn</button>
+
+<h3>Spend Points</h3>
+<input type="number" id="spendAmount" placeholder="Amount" />
+<input type="text" id="spendPurpose" placeholder="Purpose" />
+<button onclick="spendPoints()">Spend</button>
+
+<button onclick="earnPoints(10)">Earn 10 Points</button>
+<button onclick="redeemPoints(5)">Redeem 5 Points</button>
+
+
+  <div id="feedContainer"></div>
+  <div id="feed"></div>
+
+
+  <script src="script.js"></script>
+
+
+<div id="transactionStatus"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
